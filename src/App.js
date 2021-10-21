@@ -1,17 +1,25 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import AboutUs from "./components/aboutus";
+import CarRental from "./components/carRental";
+import Contact from "./components/contact";
 import Header from "./components/header";
 import Home from "./components/home";
+import TourPackages from "./components/tourPackages";
 
 function App() {
   return (
     <>
-    <Header />
-    <Switch>
-      <Route path="/" component={Home} />
-    </Switch>
+      <Header />
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/about_us' component={AboutUs} />
+        <Route path='/car_rental' component={CarRental} />
+        <Route path='/tour_packages' component={TourPackages} />
+        <Route path='/contact' component={Contact} />
+      </Switch>
 
-  </>
+    </>
   );
 }
 
