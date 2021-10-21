@@ -1,5 +1,8 @@
 import React from "react";
+
 import { Route, Switch } from "react-router-dom";
+
+import Footer from "./components/footer";
 import AboutUs from "./components/aboutus";
 import CarRental from "./components/carRental";
 import Contact from "./components/contact";
@@ -18,7 +21,7 @@ function App() {
         <Route path='/tour_packages' component={TourPackages} />
         <Route path='/contact' component={Contact} />
       </Switch>
-
+      <Footer />
     </>
   );
 }
