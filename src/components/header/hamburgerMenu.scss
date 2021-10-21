@@ -1,236 +1,224 @@
 .menu-container-res {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 440px;
-    z-index: 14;
-    padding: 24px 58px;
-    height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 440px;
+  z-index: 14;
+  padding: 24px 58px;
+  height: 100vh;
   font-family: "Gentona Book";
-    background: #000;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow-y: auto;
+  background: #000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
   .expandable-header{
-      font-size: 20px;
-  line-height: 23px;
-  }
-    .close-button-container {
-      display: flex;
-      justify-content: flex-end;
-      margin-top: 20px;
-    }
-    .close-button-container > img {
-      cursor: pointer;
-    }
-    .top-section {
-      position: relative;
-      // margin-top: 76px;
-    }
-    .top-section > ul {
-      padding: 0px;
-    }
-    .mlB {
-      margin-bottom: 50px;
-    }
-    .pdB {
-      padding-bottom: 16px;
-    }
-    .pdT {
-      padding-top: 16px;
-    }
-    .mdR {
-      margin-right: 16px;
-    }
-    .item-list {
     font-size: 20px;
-  line-height: 23px;
-      overflow: hidden;
-      overflow-y: hidden;
-      overflow-y: auto;
-      transition: max-height 0.3s ease-in-out;
-      color: white;
+    line-height: 23px;
+  }
+  .close-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  .close-button-container > img {
+    cursor: pointer;
+  }
+  .top-section {
+    position: relative;
+    // margin-top: 76px;
+  }
+  .top-section > ul {
+    padding: 0px;
+  }
+  .mlB {
+    margin-bottom: 50px;
+  }
+  .pdB {
+    padding-bottom: 16px;
+  }
+  .pdT {
+    padding-top: 16px;
+  }
+  .mdR {
+    margin-right: 16px;
+  }
+  .item-list {
+    font-size: 20px;
+    line-height: 23px;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-y: auto;
+    transition: max-height 0.3s ease-in-out;
+    color: white;
+  }
+  .item-list.font-med{
+    font-family: "Gentona Medium";
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .item-list > li {
+    margin-top: 24px;
+    cursor: pointer;
+    list-style-type: none;
+  }
+  .item-list > a, a[href] {
+    color: white;
+    text-decoration: none;
+  }
+  .bottom-section {
+    .title-download {
+      font-family: 'Gentona Book';
+      font-size: 14px;
+      line-height: 22px;
+      color: #ffffff;
+      opacity: 0.5;
     }
-    .item-list.font-med{
-      font-family: "Gentona Medium";
-      font-size: 18px;
-  line-height: 24px;
-    }
-    .item-list > li {
-      margin-top: 24px;
-      cursor: pointer;
-    }
-    .item-list > a,
-    a[href] {
-      color: white;
-    }
-    .bottom-section {
-      .title-download {
-        font-family: 'Gentona Book';
-        font-size: 14px;
-        line-height: 22px;
-        color: #ffffff;
-        opacity: 0.5;
+    #download-app {
+      align-items: center;
+      margin-top: 12.72px;
+      .download-content {
+        flex-grow: 1;
       }
-      #download-app {
-        align-items: center;
-        margin-top: 12.72px;
-        .download-content {
-          flex-grow: 1;
-        }
-        display: flex;
-        flex-direction: row;
-  
-        .download-arrow {
-          margin-top: auto;
-          margin-bottom: auto;
-        }
-        .ios-download {
-          margin-right: 12.72px;
-        }
-        .pdB {
-          padding-bottom: 16px;
-        }
-        .pdT {
-          padding-top: 16px;
-        }
-        .pdR {
-          padding-right: 16px;
-        }
-        .pdL {
-          padding-left: 16px;
-        }
-        .white-primary {
-          color: white;
-        }
-        .white-secondary-txt-2 {
-          color: hsla(0, 0%, 100%, 0.5);
-        }
-        .mdR {
-          margin-right: 16px;
-        }
-      }
-    }
-    .social-media-links {
-      margin-top: 16px;
-      margin-bottom: 16px;
-      .social-medias {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
-      .cursor-pointer {
-        cursor: pointer;
-      }
-      .inline-element {
-        display: inline-block;
-      }
-    }
-    .mt28 {
-      margin-top: 28px;
-    }
-    .division {
-      height: 1px;
-      background: hsla(0, 0%, 100%, 0.21);
-    }
-    .res-and-out{
       display: flex;
-      justify-content: space-between;
-      width: 100%;
-          margin-top: 24px;
-  
-          li{
-                font-size: 18px;
-      line-height: 21px;
-            color: white;
-          }
+      flex-direction: row;
+
+      .download-arrow {
+        margin-top: auto;
+        margin-bottom: auto;
+      }
+      .ios-download {
+        margin-right: 12.72px;
+      }
+      .pdB {
+        padding-bottom: 16px;
+      }
+      .pdT {
+        padding-top: 16px;
+      }
+      .pdR {
+        padding-right: 16px;
+      }
+      .pdL {
+        padding-left: 16px;
+      }
+      .white-primary {
+        color: white;
+      }
+      .white-secondary-txt-2 {
+        color: hsla(0, 0%, 100%, 0.5);
+      }
+      .mdR {
+        margin-right: 16px;
+      }
     }
-  
-    #links {
+  }
+  .social-media-links {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    .social-medias {
+      list-style: none;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: center;
-      margin-top: 16px;
-      margin-bottom: 16px;
-    }
-    #links a {
-      text-decoration: none;
-      flex: 1;
-      text-align: left;
-  
-      color: hsla(0, 0%, 100%, 0.72);
-    }
-  
-    .expandable-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      width: 100%;
       padding: 0;
-      color: white;
-      background-color: transparent;
+    }
+    .cursor-pointer {
       cursor: pointer;
-      margin-top: 24px;
-
-      span{
-        text-decoration: underline;
-      }
+    }
+    .inline-element {
+      display: inline-block;
     }
   }
-  .menu-container-res::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background: #000;
-    opacity: 0.7;
-    z-index: -1;
+  .division {
+    height: 1px;
+    background: hsla(0, 0%, 100%, 0.21);
   }
-  
-  @media (min-width: 280px) and (max-width: 439px) {
-  
-  
-    .menu-container-res {
-      width: 100%;
-      padding: 25px 20px;
-      .expandable-header {
+  .res-and-out{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 24px;
+
+    li{
       font-size: 18px;
       line-height: 21px;
+      color: white;
+    }
   }
-   .item-list {
-      font-size: 18px;
-      line-height: 21px;
-  
-   }
-   .font-med {
-  
-      font-size: 18px;
-      line-height: 21px;
-  }
-  .close-button-container {
-      display: flex;
-  }
-  #links{
-    margin-bottom: 0px;
+
+  #links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
   #links a {
-    font-family: "Gentona Book";
-    font-size: 14px;
-  line-height: 28px;
-  
-  color: rgba(255, 255, 255, 0.86);
-  
-  opacity: 0.72;
+    text-decoration: none;
+    flex: 1;
+    text-align: left;
+
+    color: hsla(0, 0%, 100%, 0.72);
   }
+
+  .expandable-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 24px;
+  }
+}
+
+.menu-container-res::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  opacity: 0.7;
+  z-index: -1;
+}
   
+@media (min-width: 280px) and (max-width: 439px) {
+  .menu-container-res {
+    width: 100%;
+    padding: 25px 20px;
+    .expandable-header {
+      font-size: 18px;
+      line-height: 21px;
     }
-  
-  }
+    .item-list {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    .font-med {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    .close-button-container {
+      display: flex;
+    }
+    #links{
+      margin-bottom: 0px;
+    }
+    #links a {
+      font-family: "Gentona Book";
+      font-size: 14px;
+      line-height: 28px;
+      color: rgba(255, 255, 255, 0.86);
+      opacity: 0.72;
+    }
+  } 
+}
   
