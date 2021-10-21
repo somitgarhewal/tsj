@@ -4,9 +4,6 @@ import cross from '../../assets/cross.svg';
 import FacebookLogo from '../../assets/facebook-logo.png';
 import InstagramLogo from '../../assets/instagram-logo.png';
 import LinkedinLogo from '../../assets/linkedin-logo.png';
-import TwitterLogo from '../../assets/twitter-logo.png';
-import YoutubeLogo from '../../assets/youtube-logo.png';
-import { Link } from 'react-router-dom';
 
 const HamburgerMenu = ({ closeHamburger }) => {
   const [showList, setShowList] = useState([]);
@@ -58,30 +55,19 @@ const HamburgerMenu = ({ closeHamburger }) => {
 
   const socialMediaData = [
     {
-      img: InstagramLogo,
-      link: 'https://www.instagram.com/olaelectric/',
-      altVal: 'instagram',
-    },
-    {
-      img: TwitterLogo,
-      link: `https://twitter.com/OlaElectric`,
-      altVal: 'twitter',
-    },
-    {
       img: FacebookLogo,
-      link: `https://www.facebook.com/Ola-Electric-104817894981469`,
+      link: `https://www.facebook.com/Thestandardjourney`,
       altVal: 'facebook',
     },
     {
-      img: LinkedinLogo,
-      link: 'https://www.linkedin.com/company/olaelectric',
-      altVal: 'linkedin',
+      img: InstagramLogo,
+      link: 'https://www.instagram.com',
+      altVal: 'instagram',
     },
-
     {
-      img: YoutubeLogo,
-      link: 'https://www.youtube.com/channel/UCq0Gj5tEf6xwvPTzx0ZxABQ',
-      altVal: 'youtube',
+      img: LinkedinLogo,
+      link: 'https://www.linkedin.com/in/the-standard-journey-a4377b1a7/',
+      altVal: 'linkedin',
     },
   ];
 
@@ -144,7 +130,7 @@ const HamburgerMenu = ({ closeHamburger }) => {
 
                     </div>
                     {showList === index && (
-                      <ul className="item-list font-med" style={{ opacity: '0.56' }}>
+                      <ul className="item-list font-med">
                         {item.subItems.map((item, index) => {
                           return (
                             <li>
@@ -168,18 +154,15 @@ const HamburgerMenu = ({ closeHamburger }) => {
                 );
             })}
 
-            <div className="division mt28"></div>
-            {/* <div className="res-and-out">
-              <Link to="/myReservations">My Reservations</Link>
-            </div> */}
           </ul>
+          <div className="division"></div>
         </div>
 
         <div className="bottom-section">
           <section className="social-media-links mdT mdB">
             <nav>
               <ul className="social-medias">
-                {socialMediaData.map((item, index) => {
+                {socialMediaData.map((item) => {
                   return (
                     <li className="inline-element cursor-pointer false">
                       <a target="_blank" href={item.link}>
@@ -191,21 +174,7 @@ const HamburgerMenu = ({ closeHamburger }) => {
               </ul>
             </nav>
           </section>
-          <div className="division"></div>
-          <section id="footer-links" class="mdT mdB">
-            <footer id="links" class="">
-              <div>
-                <a
-                  style={{ cursor: 'pointer' }}
-                  href="/policy"
-                  target="_blank"
-                  class="fs-default-xs lh-28 white-footer-txt mdL cursor-pointer"
-                >
-                  Privacy
-                </a>
-              </div>
-            </footer>
-          </section>
+          <div className="division" />
         </div>
       </div>
     </>
