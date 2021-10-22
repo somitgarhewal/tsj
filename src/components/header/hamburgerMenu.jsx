@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import './hamburgerMenu.scss';
 import cross from '../../assets/cross.svg';
-import FacebookLogo from '../../assets/facebook-logo.png';
-import InstagramLogo from '../../assets/instagram-logo.png';
-import LinkedinLogo from '../../assets/linkedin-logo.png';
+import { socialMediaData } from '../../utilsData/socialMediaData';
 
 const HamburgerMenu = ({ closeHamburger }) => {
   const [showList, setShowList] = useState([]);
@@ -52,24 +50,6 @@ const HamburgerMenu = ({ closeHamburger }) => {
       link: `paynow`,
     },
   ]);
-
-  const socialMediaData = [
-    {
-      img: FacebookLogo,
-      link: `https://www.facebook.com/Thestandardjourney`,
-      altVal: 'facebook',
-    },
-    {
-      img: InstagramLogo,
-      link: 'https://www.instagram.com',
-      altVal: 'instagram',
-    },
-    {
-      img: LinkedinLogo,
-      link: 'https://www.linkedin.com/in/the-standard-journey-a4377b1a7/',
-      altVal: 'linkedin',
-    },
-  ];
 
   const handleShowList = (clickedIndex) => {
     if (clickedIndex === showList) {
@@ -157,7 +137,7 @@ const HamburgerMenu = ({ closeHamburger }) => {
           </ul>
           <div className="division"></div>
         </div>
-
+        
         <div className="bottom-section">
           <section className="social-media-links mdT mdB">
             <nav>
@@ -166,7 +146,7 @@ const HamburgerMenu = ({ closeHamburger }) => {
                   return (
                     <li className="inline-element cursor-pointer false">
                       <a target="_blank" href={item.link}>
-                        <img src={item.img} alt={item.altVal} />
+                        <img src={item.img.default} alt={item.altVal} />
                       </a>
                     </li>
                   );
