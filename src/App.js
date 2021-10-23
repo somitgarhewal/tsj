@@ -15,7 +15,6 @@ function App() {
   return (
     <>
       <Header />
-      <PhoneComponent />
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/about_us' component={AboutUs} />
@@ -23,6 +22,7 @@ function App() {
         <Route path='/tour_packages' component={TourPackages} />
         <Route path='/contact' component={Contact} />
       </Switch>
+      <PhoneComponent />
       <Footer />
     </>
   );
