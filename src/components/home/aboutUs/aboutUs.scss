@@ -1,0 +1,22 @@
+.about-us{
+    display: grid;
+    padding: 24px 24px 48px 24px;
+
+    .about-us-heading {
+        font-size: 30px;
+        font-weight: 800;
+        margin-top: 20px;
+    }
+    .title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .desc {
+        opacity: 0.8;
+    }
+
+    @media (min-width: 769px) {
+        padding: 60px;
+    }
+}
