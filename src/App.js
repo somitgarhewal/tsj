@@ -9,11 +9,13 @@ import Contact from "./components/contact";
 import Header from "./components/header";
 import Home from "./components/home";
 import TourPackages from "./components/tourPackages";
+import PhoneComponent from "./components/miscellaneous/phoneComponent";
 
 function App() {
   return (
     <>
       <Header />
+      <PhoneComponent />
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/about_us' component={AboutUs} />
