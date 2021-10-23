@@ -3,6 +3,7 @@ import React from 'react'
 import AboutUs from './aboutUs'
 import CarBanner from './carBanner'
 import JourneyDetailsContainer from './journeyDetailsContainer'
+import KeyFeatures from './keyFeatures'
 // import SubscribeContainer from './subscribeContainer'
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
             <CarBanner />
             <JourneyDetailsContainer />
             <AboutUs />
+            <KeyFeatures />
         </div>
     )
 }
