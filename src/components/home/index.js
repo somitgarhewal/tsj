@@ -1,11 +1,12 @@
 import React from 'react'
-import SubscribeContainer from '../subscribeContainer'
+import CarBanner from './carBanner'
+// import SubscribeContainer from './subscribeContainer'
 
 const Home = () => {
     return (
         <div>
-            Home Component
-            <SubscribeContainer />
+            {/* <SubscribeContainer /> */}
+            <CarBanner />
         </div>
     )
 }
