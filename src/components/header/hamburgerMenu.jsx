@@ -1,12 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './hamburgerMenu.scss';
 import cross from '../../assets/cross.svg';
 import { socialMediaData } from '../../utilsData/socialMediaData';
 
 const HamburgerMenu = ({ closeHamburger }) => {
   const [showList, setShowList] = useState([]);
+  const [userLoggedIn, setUserLoggedIn] = useState(false)
 
   const [navItems, setNavItems] = useState([
+    {
+      key: 'login',
+      title: 'Login/SignUp',
+      link: '/login'
+    },
+    {
+      title: 'Home',
+      link: '/'
+    },
     {
       title: 'About us',
       link: '/about_us'
@@ -58,6 +68,12 @@ const HamburgerMenu = ({ closeHamburger }) => {
       setShowList(clickedIndex)
     }
   }
+
+  useEffect(() => {
+    if (userLoggedIn) {
+      setUserLoggedIn(true)
+    }
+  }, [])
 
   return (
     <>
@@ -122,7 +138,9 @@ const HamburgerMenu = ({ closeHamburger }) => {
                     )}
                   </>
                 )
-                : (
+                :
+                (item.key === 'login' && userLoggedIn) ?
+                  null :
                   <li>
                     <a
                       target={'_self'}
@@ -131,13 +149,11 @@ const HamburgerMenu = ({ closeHamburger }) => {
                       {item.title}
                     </a>
                   </li>
-                );
             })}
-
           </ul>
           <div className="division"></div>
         </div>
-        
+
         <div className="bottom-section">
           <section className="social-media-links mdT mdB">
             <nav>
