@@ -1,5 +1,7 @@
 import React from 'react'
+
 import CarBanner from './carBanner'
+import JourneyDetailsContainer from './journeyDetailsContainer'
 // import SubscribeContainer from './subscribeContainer'
 
 const Home = () => {
@@ -7,6 +9,7 @@ const Home = () => {
         <div>
             {/* <SubscribeContainer /> */}
             <CarBanner />
+            <JourneyDetailsContainer />
         </div>
     )
 }
