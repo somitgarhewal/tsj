@@ -1,0 +1,15 @@
+.journey-details {
+    padding: 0 10px;
+    border: 2px solid #6daf43;
+    background: #f2f5f1;
+
+    .entity-row{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        background: #fff;
+        color: #304331;
+        padding: 10px;
+        font-weight: 700;
+    }
+}
