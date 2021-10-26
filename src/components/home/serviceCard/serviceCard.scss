@@ -1,0 +1,25 @@
+.service-card {
+	background-image: url('../../../assets/servicecard_background.jpeg');
+	height: 230px;
+	width: 400px;
+	display: grid;
+	text-align: center;
+	align-content: center;
+	transition: transform .5s;
+	cursor: pointer;
+   
+	&:hover {
+		transform: scale(1.05); 
+		border: 1px solid yellowgreen;
+	}
+
+	.card-image {
+		justify-self: center;
+	}
+
+	.card-text {
+		color: white;
+		font-size: 20px;
+		font-weight: 700;
+	}
+}
