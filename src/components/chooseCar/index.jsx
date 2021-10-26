@@ -1,12 +1,12 @@
 import React from 'react'
 
-import './carRental.scss'
+import './chooseCar.scss'
 import LeftContainer from './leftContainer'
 import RightContainer from './rightContainer'
 
-const CarRental = () => {
+const ChooseCar = () => {
     return (
-        <div className='container-fluid car-rental'>
+        <div className='container-fluid choose-car'>
             <div className='row'>
                 <div className='col-md-2 left-contaner'>
                     <LeftContainer />
@@ -19,4 +19,4 @@ const CarRental = () => {
     )
 }
 
-export default CarRental
+export default ChooseCar
