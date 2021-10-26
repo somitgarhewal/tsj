@@ -1,9 +1,15 @@
 .services-offered-container {
-     
+     padding: 16px 20px;
     .title{
         width: 100%;
         text-align: center;
         font-size: 35px;
         font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    .service-card-container {
+        display: flex;
+        text-align: -webkit-center;
     }
 }
