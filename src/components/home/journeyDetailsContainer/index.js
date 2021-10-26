@@ -34,7 +34,7 @@ const JourneyDetailsContainer = ({ journeyData, setJourneyData }) => {
 			time
 		}
 		setJourneyData(data)
-		history.push('/car_rental')
+		history.push('/choose_car')
 	}
 
 	return (
