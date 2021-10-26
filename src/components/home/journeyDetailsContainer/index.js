@@ -41,7 +41,7 @@ const JourneyDetailsContainer = ({ journeyData, setJourneyData }) => {
 		<div className='journey-details-container'>
 			<div className="row">
 				<div className="col-md-2">
-					Pickup Location
+					Pickup
 					<input
 						className="form-control"
 						placeholder="Pickup location"
@@ -50,7 +50,7 @@ const JourneyDetailsContainer = ({ journeyData, setJourneyData }) => {
 					/>
 				</div>
 				<div className="col-md-2">
-					Drop Location
+					Drop
 					<input
 						className="form-control"
 						placeholder="Drop location"
@@ -64,6 +64,7 @@ const JourneyDetailsContainer = ({ journeyData, setJourneyData }) => {
 						type="text"
 						className="form-control"
 						value={kms}
+						placeholder='kms'
 						onChange={(e) => setKms(e.target.value)}
 					/>
 				</div>
@@ -73,6 +74,7 @@ const JourneyDetailsContainer = ({ journeyData, setJourneyData }) => {
 						type="text"
 						className="form-control"
 						value={hrs}
+						placeholder='hrs'
 						onChange={(e) => setHrs(e.target.value)}
 					/>
 				</div>
