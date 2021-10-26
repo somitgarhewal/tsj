@@ -1,9 +1,12 @@
 import React from 'react'
 import { useState } from 'react/cjs/react.development'
+import { connect } from 'react-redux';
+import { useHistory } from 'react-router';
 
+import { setJourneyData } from '../../../redux/actions/journeyDataActions';
 import './JourneyDetailsContainer.scss'
 
-const JourneyDetailsContainer = () => {
+const JourneyDetailsContainer = ({ journeyData, setJourneyData }) => {
 
 	const [pickupLocation, setPickupLocation] = useState('')
 	const [dropLocation, setDropLocation] = useState('')
@@ -12,6 +15,8 @@ const JourneyDetailsContainer = () => {
 	const [date, setDate] = useState(new Date())
 	const [time, setTime] = useState('')
 
+	const history = useHistory()
+
 	const handleFindCars = () => {
 		console.log('pickupLocation', pickupLocation)
 		console.log('dropLocation', dropLocation)
@@ -19,6 +24,17 @@ const JourneyDetailsContainer = () => {
 		console.log('hrs', hrs)
 		console.log('date', date)
 		console.log('time', time)
+
+		const data = {
+			pickupLocation,
+			dropLocation,
+			kms,
+			hrs,
+			date,
+			time
+		}
+		setJourneyData(data)
+		history.push('/car_rental')
 	}
 
 	return (
@@ -90,4 +106,12 @@ const JourneyDetailsContainer = () => {
 	)
 }
 
-export default JourneyDetailsContainer
+const mapStateToProps = (state) => {
+	return {
+		journeyData: state.journeyData
+	};
+}
+
+const mapDispatchToProps = { setJourneyData }
+
+export default connect(mapStateToProps, mapDispatchToProps)(JourneyDetailsContainer);

@@ -1,0 +1,1 @@
+export const SET_JOURNEY_DATA = 'SET_JOURNEY_DATA'
