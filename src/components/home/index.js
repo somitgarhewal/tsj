@@ -4,6 +4,7 @@ import AboutUs from './aboutUs'
 import CarBanner from './carBanner'
 import JourneyDetailsContainer from './journeyDetailsContainer'
 import KeyFeatures from './keyFeatures'
+import ServicesOffered from './servicesOffered'
 // import SubscribeContainer from './subscribeContainer'
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
             <JourneyDetailsContainer />
             <AboutUs />
             <KeyFeatures />
+            <ServicesOffered />
         </div>
     )
 }
