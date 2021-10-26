@@ -11,6 +11,7 @@ import Home from "./components/home";
 import TourPackages from "./components/tourPackages";
 import PhoneComponent from "./components/miscellaneous/phoneComponent";
 import TaxiServices from "./components/taxiServices";
+import CarRental from "./components/carRental";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/choose_car' component={ChooseCar} />
         <Route path='/tour_packages' component={TourPackages} />
         <Route path='/contact' component={Contact} />
+        <Route path='/car_rental' component={CarRental} />
         <Route path='/taxi_services' component={TaxiServices} />
       </Switch>
       <PhoneComponent />
