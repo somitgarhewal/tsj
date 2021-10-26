@@ -1,0 +1,25 @@
+.banner {
+    position: relative;
+    // background-image: url('../../../assets/car-rental.jpeg');
+    background-position: center;
+    min-height: 500px;
+    display: grid;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .text-container{
+        position: relative;
+        max-width: none;
+        align-self: center;
+
+        .text{
+            font-weight: 600;
+            color: #FFF;
+            position: relative;
+            max-width: none;
+            padding: 2rem;
+            font-size: 25px;     
+        }
+    }
+  
+}
