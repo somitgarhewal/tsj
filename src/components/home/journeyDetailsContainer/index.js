@@ -25,6 +25,10 @@ const JourneyDetailsContainer = ({ journeyData, setJourneyData }) => {
 		console.log('date', date)
 		console.log('time', time)
 
+		if(pickupLocation === '' || dropLocation === '' || kms === '' || hrs === '' || date === '' || time === ''){
+			return alert('please fill all fields.')
+		}
+
 		const data = {
 			pickupLocation,
 			dropLocation,
