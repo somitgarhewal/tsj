@@ -13,6 +13,8 @@ import PhoneComponent from "./components/miscellaneous/phoneComponent";
 import TaxiServices from "./components/taxiServices";
 import CarRental from "./components/carRental";
 
+import './App.scss'
+
 function App() {
   return (
     <>
