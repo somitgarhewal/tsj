@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './aboutUs.scss'
-import {aboutUsData} from '../../../utilsData/aboutUsData'
+import { aboutUsData } from '../../../utilsData/aboutUsData'
 
 const AboutUs = () => {
     return (
