@@ -10,7 +10,7 @@ export const keyFeaturesData = [
         key: 'culture_and_core_values',
         iconClasses: 'fa fa-gears',
         title: 'Our Culture & Core Values',
-        desc: `We are a Group of Passionate Professionals, who always focused on  quality and in-time service to our customers with thier safety. By this we are increasing happy clients day by day.`,
+        desc: `We are a Group of Passionate Professionals, who believe in quality service delivery along in-time service with client safety. With this we are in direction to grow the company with increased number of happy clients having high rate of retention, who always focused on quality and in-time service to our customers with their safety. By this we are increasing happy clients day by day.`,
         image: require('../assets/mercedes-benz-e.jpg')
     },
     {
@@ -21,3 +21,4 @@ export const keyFeaturesData = [
         image: require('../assets/2021_jaguar_xf.jpeg')
     },
 ]
+
