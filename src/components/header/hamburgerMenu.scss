@@ -8,13 +8,13 @@
   padding: 24px 58px;
   height: 100vh;
   font-family: "Gentona Book";
-  background-color: #0B0B45;
+  background-color: #0b0b45;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
-  .expandable-header{
+  .expandable-header {
     font-size: 20px;
     line-height: 23px;
   }
@@ -54,7 +54,7 @@
     transition: max-height 0.3s ease-in-out;
     color: white;
   }
-  .item-list.font-med{
+  .item-list.font-med {
     font-family: "Gentona Medium";
     font-size: 18px;
     line-height: 24px;
@@ -64,13 +64,14 @@
     cursor: pointer;
     list-style-type: none;
   }
-  .item-list > a, a[href] {
+  .item-list > a,
+  a[href] {
     color: white;
     text-decoration: none;
   }
   .bottom-section {
     .title-download {
-      font-family: 'Gentona Book';
+      font-family: "Gentona Book";
       font-size: 14px;
       line-height: 22px;
       color: #ffffff;
@@ -130,19 +131,22 @@
     }
     .inline-element {
       display: inline-block;
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
   .division {
     height: 1px;
     background: hsla(0, 0%, 100%, 0.21);
   }
-  .res-and-out{
+  .res-and-out {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin-top: 24px;
 
-    li{
+    li {
       font-size: 18px;
       line-height: 21px;
       color: white;
@@ -179,7 +183,7 @@
 }
 
 .menu-container-res::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -188,7 +192,7 @@
   opacity: 0.7;
   z-index: -1;
 }
-  
+
 @media (min-width: 280px) and (max-width: 439px) {
   .menu-container-res {
     width: 100%;
@@ -208,7 +212,7 @@
     .close-button-container {
       display: flex;
     }
-    #links{
+    #links {
       margin-bottom: 0px;
     }
     #links a {
@@ -218,6 +222,5 @@
       color: rgba(255, 255, 255, 0.86);
       opacity: 0.72;
     }
-  } 
+  }
 }
-  
