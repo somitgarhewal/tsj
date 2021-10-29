@@ -16,10 +16,10 @@ const AboutUs = () => {
             <span>
                 Thanks to all our loyal clients and team members who have stood by us over the years, the brand has been built on operational excellence and repeated customers
             </span>
-            {aboutUsData.map(item => <>
+            {/* {aboutUsData.map(item => <>
                 <span className='title'>{item.title}</span>
                 <span className='desc'>{item.desc}</span>
-            </>)}
+            </>)} */}
         </div>
     )
 }

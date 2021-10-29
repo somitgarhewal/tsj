@@ -3,10 +3,11 @@
 
     .key-feature-row {
         display: flex;
-        margin: 20px 0;
+        margin: 20px 5%;
 
         .non-image-continer {
             align-self: center;
+            
             .title-container {
                 height: fit-content;
                 align-self: center;
@@ -20,15 +21,23 @@
                     margin: 15px 15px 0 0;
                 }
                 .title {
-                    font-size: 26px;
+                    font-size: 28px;
+                    font-weight: 700;
                 }
         
             }
             .desc {
                 display: flex;
-                padding-left: 75px;
+                // padding-left: 75px;
                 opacity: 0.8;
             }
+        }
+
+        .pl-75{
+            padding-left: 75px;
+        }
+        .pr-75{
+            padding-right: 75px;
         }
 
         .image {

@@ -2,7 +2,7 @@ import React from 'react'
 
 import ServicePageBanner from '../miscellaneous/servicePageBanner'
 import './tourPackages.scss'
-import CarRental from '../../assets/car-rental.jpeg'
+import CarRental from '../../assets/screen2.jpg'
 import ServicePageText from '../miscellaneous/servicePageText'
 
 const TourPackages = () => {

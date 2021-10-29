@@ -2,7 +2,7 @@ import React from 'react'
 
 import ServicePageBanner from '../miscellaneous/servicePageBanner'
 import ServicePageText from '../miscellaneous/servicePageText'
-import CarRentalImage from '../../assets/car-rental.jpeg'
+import CarRentalImage from '../../assets/screen1.jpg'
 
 const CarRental = () => {
     const heading = 'Car Rental'
