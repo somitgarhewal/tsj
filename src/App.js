@@ -18,7 +18,7 @@ import './App.scss'
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/about_us' component={AboutUs} />

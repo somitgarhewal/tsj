@@ -2,10 +2,58 @@
     position: relative;
     // background-image: url('../../../assets/car-rental.jpeg');
     background-position: center;
-    min-height: 500px;
+    min-height: 700px;
     display: grid;
     background-repeat: no-repeat;
     background-size: cover;
+
+    .header-on-banner {
+        display: flex;
+        padding-top: 15px;
+
+        .image {
+            max-height: 8rem;
+           
+            @media (max-width: 767px) {
+                max-height: 6rem;
+            }
+        }
+
+        .logo {
+
+            padding-left: 8rem;
+           
+            @media (max-width: 767px) {
+                padding-left: 0px;
+            }
+
+            img {
+                border-radius: 5px;
+            }
+        }
+
+        .menu-icon {
+            margin-left: auto;
+            align-self: center;
+            background: black;
+            padding: 5px;
+            align-self: start;
+            background: black;
+            padding: 7px;
+            margin: 25px 50px 0px auto;
+            cursor: pointer;
+            border-radius: 5px;
+
+            @media (max-width: 767px) {
+                margin: 25px 15px 0px auto;
+            }
+
+            img {
+                height: 2rem;
+            }
+        }
+    }
+
 
     .text-container{
         position: relative;
