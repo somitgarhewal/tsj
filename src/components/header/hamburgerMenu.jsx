@@ -29,10 +29,14 @@ const HamburgerMenu = ({ closeHamburger }) => {
           link: "/car_rental",
         },
         {
-          title: "Tour packages for domestic & international",
-          link: "/tour_packages",
+          title: 'Tour packages for domestic & international',
+          link: '/tour_packages'
         },
-      ],
+        {
+          title: 'Taxi Services',
+          link: '/taxi_services'
+        },
+      ]
     },
     {
       title: "Gallery",
