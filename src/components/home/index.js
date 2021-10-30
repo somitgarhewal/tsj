@@ -6,6 +6,7 @@ import KeyFeatures from './keyFeatures'
 import ServicesOffered from './servicesOffered'
 import banner from '../../assets/car-rental.jpeg'
 import ServicePageBanner from '../miscellaneous/servicePageBanner'
+import Carousel from './carousel'
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
             <AboutUs />
             <KeyFeatures />
             <ServicesOffered />
+            <Carousel />
         </div>
     )
 }
