@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { constants } from '../../constants'
-
+import companyLogo from '../../assets/company_logo.jpeg'
 import './footer.scss'
 
 const Footer = () => {
@@ -10,7 +9,7 @@ const Footer = () => {
 			<div className='row justify-content-around'>
 				<div className='col-sm-4 left-container'>
 					<div className='row'>
-						<img className='company-icon' src={constants.COMPANY_ICON_URL} />
+						<img className='company-icon' src={companyLogo} />
 					</div>
 					<div className='row'>
 						<ul>
