@@ -1,22 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import OwlCarousel from 'react-owl-carousel';
 
 import './carousel.scss'
 import { testimonialData } from '../../../utilsData/testimonialData';
 
-const Carousel = () => {
+const Carousel = ({noOfItems}) => {
 
-    const [noOfItems, setNoOfItems] = useState('desktop')
-
-    useEffect(() => {
-        if (window.screen.width < 541) {
-            setNoOfItems(1);
-        } else if (window.screen.width < 1025) {
-            setNoOfItems(3);
-        } else {
-            setNoOfItems(4)
-        }
-    }, [])
     return (
         <OwlCarousel
             autoplay={true}

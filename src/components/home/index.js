@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import AboutUs from './aboutUs'
 import CarBanner from './carBanner'
@@ -10,14 +10,40 @@ import Carousel from './carousel'
 
 
 const Home = () => {
+    const [isMweb, setIsMweb] = useState(false)
+    const [noOfItems, setNoOfItems] = useState('desktop')
+
+    useEffect(() => {
+        handleResize();
+        window.addEventListener('resize', handleResize);
+    }, []);
+
+    const handleResize = () => {
+        // if (window.screen.width <= 541) {
+        //     setIsMweb(true);
+        // } else {
+        //     setIsMweb(false);
+        // }
+
+        if (window.screen.width < 541) {
+            setNoOfItems(1);
+            setIsMweb(true);
+        } else if (window.screen.width < 1025) {
+            setNoOfItems(3);
+            setIsMweb(false);
+        } else {
+            setNoOfItems(4)
+            setIsMweb(false);
+        }
+    };
     return (
         <div>
             {/* <CarBanner /> */}
             <ServicePageBanner banner={banner} />
             <AboutUs />
-            <KeyFeatures />
+            <KeyFeatures isMweb={isMweb} />
             <ServicesOffered />
-            <Carousel />
+            <Carousel noOfItems={noOfItems} />
         </div>
     )
 }

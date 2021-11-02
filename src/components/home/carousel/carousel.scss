@@ -1,5 +1,6 @@
 .owl-carousel {
     background: linear-gradient(to right, #101c81, #2a6ba3);
+    z-index: 0;
 }
 .owl-carousel .owl-item {
     transition: all 0.3s ease-in-out;
