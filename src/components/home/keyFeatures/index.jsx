@@ -16,7 +16,7 @@ const KeyFeatures = ({isMweb}) => {
 			</div>
 			{(index % 2) ? <img className='image' src={item.image.default} /> : null}
 		</div>
-		)}ß
+		)}
 	</div>
 
 	const mobileContent = <div className='key-feature-container'>

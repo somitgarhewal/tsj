@@ -7,6 +7,7 @@ import ServicesOffered from './servicesOffered'
 import banner from '../../assets/car-rental.jpeg'
 import ServicePageBanner from '../miscellaneous/servicePageBanner'
 import Carousel from './carousel'
+import CustomerReviews from './customerReviews'
 
 
 const Home = () => {
@@ -19,11 +20,6 @@ const Home = () => {
     }, []);
 
     const handleResize = () => {
-        // if (window.screen.width <= 541) {
-        //     setIsMweb(true);
-        // } else {
-        //     setIsMweb(false);
-        // }
 
         if (window.screen.width < 541) {
             setNoOfItems(1);
@@ -43,7 +39,8 @@ const Home = () => {
             <AboutUs />
             <KeyFeatures isMweb={isMweb} />
             <ServicesOffered />
-            <Carousel noOfItems={noOfItems} />
+            {/* <Carousel noOfItems={noOfItems} /> */}
+            <CustomerReviews noOfItems={noOfItems} />
         </div>
     )
 }

@@ -1,6 +1,7 @@
 .owl-carousel {
-    background: linear-gradient(to right, #101c81, #2a6ba3);
+    background: linear-gradient(to right, #000000, #242424);
     z-index: 0;
+    margin-top: 20px;
 }
 .owl-carousel .owl-item {
     transition: all 0.3s ease-in-out;
@@ -20,9 +21,9 @@
 }
 
 .owl-carousel .owl-item img {
-    height: 200px;
-    object-fit:cover;
-    border-radius: 6px;
+    height: 230px;
+    object-fit: fill;
+    border-radius: 50%;
 }
 
 .owl-carousel .owl-item .card .name {
