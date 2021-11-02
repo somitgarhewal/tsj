@@ -21,7 +21,8 @@
 }
 
 .owl-carousel .owl-item img {
-    height: 230px;
+    height: 200px;
+    width: 200px;
     object-fit: fill;
     border-radius: 50%;
 }
@@ -42,12 +43,14 @@
 .owl-carousel .owl-item .card {
     opacity: 0.2;
     transform: scale3d(0.8, 0.8, 0.8);
-    transition: all 0.3s ease-in-out
+    align-items: center;
+    transition: all 0.3s ease-in-out;
 }
 
 .owl-carousel .owl-item.active.center .card {
     opacity: 1;
-    transform: scale3d(1, 1, 1)
+    transform: scale3d(1, 1, 1);
+    align-items: center;
 }
 
 .owl-carousel .owl-dots {
