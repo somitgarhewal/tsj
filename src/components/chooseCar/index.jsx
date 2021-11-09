@@ -6,12 +6,12 @@ import RightContainer from './rightContainer'
 
 const ChooseCar = () => {
     return (
-        <div className='container-fluid choose-car'>
+        <div className='container choose-car'>
             <div className='row'>
-                <div className='col-md-2 left-contaner'>
+                <div className='col-md-3 left-contaner'>
                     <LeftContainer />
                 </div>
-                <div className='col right-continerk'>
+                <div className='col right-continer'>
                     <RightContainer />
                 </div>
             </div>

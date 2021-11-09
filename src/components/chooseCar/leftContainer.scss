@@ -1,8 +1,80 @@
-.journey-details {
-    padding: 0 10px;
-    border: 2px solid #6daf43;
-    background: #f2f5f1;
+.filter-container {
+   
+    .filter-card {
+        border: 2px solid gray;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 4px;
+        background: #f2f5f1;
 
+        .filter-card-type {
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 18px;
+        }
+
+        .filter-card-content {
+            display: flex;
+            justify-content: space-around;
+
+            .filter-card-content-element {
+                border: 2px solid gray;
+                display: grid;
+                padding: 5px 10px;
+                align-items: center;
+                text-align: center;
+                // min-width: 40%;
+                border-radius: 4px;
+                cursor: pointer;
+
+                &:hover{
+                    background: #abd69d;
+                }
+            }
+        }
+    }
+
+    .occupancy-container {
+        border: 2px solid gray;
+        padding: 5px;
+        border-radius: 4px;
+        background: #f2f5f1;
+
+        .occupancy-header{
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 18px;
+
+        }
+        .occupancy-content{
+            display: flex;
+            justify-content: space-around;
+
+            .occupancy-content-element {
+                border: 2px solid gray;
+                display: grid;
+                padding: 5px;
+                align-items: center;
+                text-align: center;
+                min-width: 40%;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .filter-heading {
+        font-size: 20px;
+        background: black;
+        color: white;
+        font-weight: 700;
+        margin-top: 20px;
+        padding: 5px;
+        text-align: center;
+        border-radius: 4px;
+    }
+    
     .entity-row{
         display: flex;
         justify-content: space-between;
