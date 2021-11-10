@@ -1,0 +1,15 @@
+.invoive {
+    padding-top: 30px;
+
+    .header{
+        background: white;
+    }
+    .invoice-body {
+        line-height: 45px;
+        font-size: 18px;
+
+        .body-row {
+            display: block;
+        }
+    }
+}

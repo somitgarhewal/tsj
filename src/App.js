@@ -14,6 +14,8 @@ import TaxiServices from "./components/taxiServices";
 import CarRental from "./components/carRental";
 
 import './App.scss'
+import InvoiceGenerator from "./components/invoiceGenerator";
+import InvoiceDocument from "./components/invoiceGenerator/invoiceDocument";
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
         <Route path='/contact' component={Contact} />
         <Route path='/car_rental' component={CarRental} />
         <Route path='/taxi_services' component={TaxiServices} />
+        <Route path='/invoice_generator' component={InvoiceGenerator} />
       </Switch>
       <PhoneComponent />
       <Footer />
