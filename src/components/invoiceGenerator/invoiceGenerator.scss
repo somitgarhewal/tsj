@@ -1,0 +1,21 @@
+.invoice-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 40px 0;
+}
+
+.invoive-details-container{
+    .row{
+        margin: 20px 0;
+    }
+    .button-row {
+        justify-content: center;
+        margin: 50px 0;
+        .find-button {
+            width: fit-content;
+            padding: 5px;
+        }
+    }
+}
+
